@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RepoKickMod</RootNamespace>
+    <AssemblyName>RepoKickMod</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx">
+      <HintPath>libs/BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="HarmonyLib">
+      <HintPath>libs/HarmonyLib.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>libs/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="MenuLib">
+      <HintPath>libs/MenuLib.dll</HintPath>
+    </Reference>
+    <Reference Include="REPOConfig">
+      <HintPath>libs/REPOConfig.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
