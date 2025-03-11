@@ -6,10 +6,9 @@
     <AssemblyName>RepoKickMod</AssemblyName>
   </PropertyGroup>
 <ItemGroup>
-  <PackageReference Include="BepInEx" Version="x.y.z" />
-  <PackageReference Include="HarmonyLib" Version="x.y.z" />
-  <PackageReference Include="UnityEngine" Version="x.y.z" />
-  <PackageReference Include="MenuLib" Version="x.y.z" />
-  <PackageReference Include="REPOConfig" Version="x.y.z" />
-</ItemGroup>
+    <PackageReference Include="BepInEx" Version="5.4.2100" />
+    <PackageReference Include="HarmonyLib" Version="2.2.0" />
+    <PackageReference Include="REPOConfig" Version="1.1.4" />
+    <PackageReference Include="MenuLib" Version="1.0.2" />
+  </ItemGroup>
 </Project>
