@@ -15,11 +15,14 @@ jobs:
         with:
           dotnet-version: 6.0.x
 
+      - name: List files in the repository
+        run: ls -R  
+
       - name: Restore Dependencies
-        run: dotnet restore .csproj
+        run: dotnet restore RepoKickMod.csproj 
 
       - name: Build Project
-        run: dotnet build .csproj --configuration Release
+        run: dotnet build RepoKickMod.csproj --configuration Release
 
       - name: Upload DLL
         uses: actions/upload-artifact@v4
