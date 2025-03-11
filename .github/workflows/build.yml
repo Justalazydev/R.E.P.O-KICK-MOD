@@ -16,10 +16,10 @@ jobs:
           dotnet-version: 6.0.x
 
       - name: Restore Dependencies
-        run: dotnet restore RepoKickMod.csproj
+        run: dotnet restore .csproj
 
       - name: Build Project
-        run: dotnet build RepoKickMod.csproj --configuration Release
+        run: dotnet build .csproj --configuration Release
 
       - name: Upload DLL
         uses: actions/upload-artifact@v4
