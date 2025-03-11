@@ -10,13 +10,10 @@ public class REPOKickMod : BaseUnityPlugin
     private void Awake()
     {
         ConfigManager.LoadConfig();
-
         Harmony harmony = new Harmony("com.TankDaDank.REPOKickMod");
         harmony.PatchAll();
-        
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
-
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (scene.name == "MultiplayerLobby")
@@ -27,11 +24,10 @@ public class REPOKickMod : BaseUnityPlugin
             }
         }
         else
-           
+        {
             UIManager.ClearUI();
         }
     }
-
     private void OnDestroy()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
