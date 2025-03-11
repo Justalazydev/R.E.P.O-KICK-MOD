@@ -16,13 +16,13 @@ jobs:
           dotnet-version: 6.0.x
 
       - name: List files in the repository
-        run: ls -R  
+        run: ls -a  # List all files, including hidden ones like .csproj
 
       - name: Restore Dependencies
-        run: dotnet restore RepoKickMod.csproj 
+        run: dotnet restore .csproj  # Adjusted to reflect the actual file name
 
       - name: Build Project
-        run: dotnet build RepoKickMod.csproj --configuration Release
+        run: dotnet build .csproj --configuration Release  # Use the correct file name
 
       - name: Upload DLL
         uses: actions/upload-artifact@v4
